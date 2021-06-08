@@ -1,0 +1,145 @@
+html
+{
+    font-size: 32px;;
+    box-sizing: border-box;
+    background-color: #555;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header{
+    padding:.2rem 1rem;
+    position: relative;
+}
+.play
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.play-again
+{
+    /* width:4rem; */
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 0 .2rem;
+    cursor: pointer;
+
+}
+.guess-message
+{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+.hidden
+{
+    width:100px;
+    height:100px;
+    background-color: white;
+    margin:1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-top:10px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.range
+{
+    font-size: .5rem;;
+    color: white;
+}
+main{
+    display: flex;
+    padding:1rem 2rem;
+    flex-wrap: wrap;
+    
+}
+
+main section
+{
+    width:50%;
+}
+.input
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 40vh;
+   
+}
+.input input
+{
+    width:150px;
+   font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    margin:10px 0;
+    box-sizing: border-box;
+    padding:20px 20px 20px 20px ;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border:1px solid white;
+  
+    /* padding-left: 10px; */
+
+}
+.input button{
+width:fit-content;
+padding:.5rem .8rem ;
+font-size: 1rem;
+font-weight: 600;
+align-self: center;
+cursor: pointer;
+}
+.display
+{
+    font-size: .8rem;
+    text-align:start;
+    align-self: center;
+    margin-top: 20px;;
+   
+
+}
+.message
+{
+    margin-bottom: 40px;
+    color: white;
+}
+.scores p{
+    margin: 0;
+    font-size: .6rem;
+    padding: 10px 0 ;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    main section
+    {
+        width:100%
+    }
+    .guess-message
+    {
+        font-size: 1.5rem;
+        padding-top: 10px;;
+    }
+    .input input
+    {
+        margin:0 auto;
+    }
+    main
+    {
+        padding: 0 .5rem;
+    }
+    .input
+    {
+       min-height: 30vh;
+        box-sizing: border-box;
+    }
+    .message
+    {
+        margin-bottom: 20px;;
+    }
+}
